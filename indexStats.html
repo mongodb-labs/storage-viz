@@ -1,0 +1,54 @@
+<!--
+Copyright (C) 2012 10gen Inc.
+
+This program is free software: you can redistribute it and/or  modify
+it under the terms of the GNU Affero General Public License, version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+    <head>
+        <title>mongovis visualizer</title>
+        <script type="text/javascript" src="d3.v2.js"></script>
+        <script type="text/javascript" src="base.js"></script>
+        <script type="text/javascript" src="boxPlot.js"></script>
+        <link rel="stylesheet" href="base.css" />
+        <link rel="stylesheet" href="indexStats.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div class="grid-tr">
+                <div id="header" class="grid-td">
+                    mongoDB :: collection.indexStats command (mongod should be started with --rest --jsonp)
+                </div>
+            </div>
+            <div class="grid-tr">
+                <div id="requestForm" class="grid-td">
+                </div>
+            </div>
+            <div class="grid-tr">
+                <div id="resultString" class="grid-td">
+                </div>
+            </div>
+            <div id="basicInfoRow" class="grid-tr">
+            </div>
+            <div class="grid-tr">
+                <div id="curNodeStats" class="grid-td grid-half"></div>
+                <div id="detailedStats" class="grid-td grid-half"></div>
+            </div>
+            <div class="grid-tr">
+                <div id="levels" class="grid-td">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="indexStats.js"></script>
+    </body>
+</html>

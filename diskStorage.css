@@ -1,0 +1,94 @@
+/* index.css */
+
+/**
+*    Copyright (C) 2012 10gen Inc.
+*
+*    This program is free software: you can redistribute it and/or  modify
+*    it under the terms of the GNU Affero General Public License, version 3,
+*    as published by the Free Software Foundation.
+*
+*    This program is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU Affero General Public License for more details.
+*
+*    You should have received a copy of the GNU Affero General Public License
+*    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#extentSummaryRow {
+    background: white;
+    z-index: 10;
+}
+
+#extentSummary {
+    padding: 10px;
+}
+
+.extentGraph {
+    overflow: auto;
+}
+
+.extentRow.highlighted > div:first-child {
+    background-color: #ffc;
+}
+
+rect.spaceUsageBar {
+    fill: white;
+}
+                
+rect.bsonBytes {
+    fill: #88f;
+}
+
+rect.recBytes {
+    fill: #bbf;
+}
+
+#infoBox table td {
+    padding-right: 15px;
+    text-align: right;
+}
+
+#legend .col {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.axis path {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis line {
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+path.frame {
+    stroke: black;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.extentSummary {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    text-align: center;
+}
+
+rect.border {
+    fill: none;
+}
+
+.summaryBar rect.border {
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.onDiskBytes {
+    margin-bottom: 5px;
+}

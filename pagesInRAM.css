@@ -1,0 +1,75 @@
+/**
+*    Copyright (C) 2012 10gen Inc.
+*
+*    This program is free software: you can redistribute it and/or  modify
+*    it under the terms of the GNU Affero General Public License, version 3,
+*    as published by the Free Software Foundation.
+*
+*    This program is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU Affero General Public License for more details.
+*
+*    You should have received a copy of the GNU Affero General Public License
+*    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+div.extentChart {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    text-align: center;
+}
+
+div.slicesGraph {
+    overflow: auto;
+}
+
+rect.border {
+    fill: white;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+
+rect.inRAM {
+    fill: #777;
+    stroke: none;
+}
+
+rect.slice {
+    fill: #00f;
+    stroke: none;
+}
+
+path.frame {
+    stroke: black;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.axis path {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis line.tick {
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.extentRow.highlighted > div:first-child {
+    background-color: #ffc;
+}
+
+.extentSize {
+    margin-bottom: 5px;
+}
+
+.extentPercent {
+    margin-top: 5px;
+}
+
+#extentsSummary svg {
+    margin: 10px;
+}

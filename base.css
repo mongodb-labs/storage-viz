@@ -1,0 +1,111 @@
+/*
+Copyright (C) 2012 10gen Inc.
+
+This program is free software: you can redistribute it and/or  modify
+it under the terms of the GNU Affero General Public License, version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* --- GRID --- */
+body {
+    font-family: sans-serif;
+    font-size: 10pt;
+    color: #555;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+}
+
+table {
+    font-size: 10pt;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin: 0 auto;
+    min-width: 940px;
+}
+
+.grid-td > .grid-tr,
+#container > .grid-tr {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+.grid-tr {
+    display: table-row;
+}
+
+.grid-td {
+    display: table-cell;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    min-height: 10px;
+    padding: 6px 10px 6px 10px;
+    vertical-align: top;
+}
+
+.grid-half {
+    width: 50%;
+}
+
+.grid-td:last-child {
+    border-right: none;
+}
+
+/* --- FORMS --- */
+button {
+    padding: 0.3em;
+}
+
+label {
+    margin-right: 0.5em;
+}
+
+input {
+    margin-right: 1em;
+    border: 1px solid;
+    padding: 1px;
+}
+
+/* --- STYLES --- */
+#header {
+    background-color: rgb(64, 40, 23);
+    color: #ccc;
+    border-bottom: none;
+}
+
+#basicInfoRow {
+    font-weight: bold;
+}
+
+.left-table-header {
+    width: 20px;
+    position: relative;
+}
+
+.left-table-header > span {
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    margin-top: 40px;
+    white-space: nowrap;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+}
+

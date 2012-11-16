@@ -1,0 +1,53 @@
+
+/*
+Copyright (C) 2012 10gen Inc.
+
+This program is free software: you can redistribute it and/or  modify
+it under the terms of the GNU Affero General Public License, version 3,
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+.level-summary {
+    width: 325px;
+    min-width: 325px;
+}
+
+.expanded-container {
+    overflow: auto;
+    white-space: nowrap;
+    min-width: 500px;
+}
+
+.expanded-node {
+    vertical-align: top;
+    display: inline-block;
+    border: 1px dashed #bbb;
+    padding: 6px;
+    margin-right: 12px;
+}
+
+.expanded-header {
+    border-bottom: 1px dashed #bbb;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/* --- BOX-PLOT --- */
+.boxplot { font: 10px sans-serif; }
+.boxplot line.whisker, line.center, line.median, .boxplot rect.box, .boxplot circle { stroke: #000; fill: #fff; }
+.boxplot line { stroke-width: 1px; shape-rendering: crispEdges; }
+.boxplot rect.fill-bar { stroke: none; fill: #ccf; }
+.boxplot .center { stroke-dasharray: 3 3; }
+.boxplot .outlier { stroke: #ccc; fill: none; }
+.boxplot path.mean { stroke: none; fill: #f00; }
+.boxplot path.median { stroke:none; fill: #00f; }
+.boxplot path.stddev { fill:none; stroke: #f00; stroke-width: 1px; shape-rendering: crispEdges; }
+.boxplot .axis path, .boxplot .axis line { fill: none; stroke: #000; stroke-width: 1px; shape-rendering: crispEdges; }
